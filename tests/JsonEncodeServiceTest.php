@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace ApiClients\Tests\Tools\JSON\CommandBus\Handler;
+namespace ApiClients\Tests\Tools\JSON;
 
-use ApiClients\Tools\JSON\Service\JsonEncodeService;
+use ApiClients\Tools\JSON\JsonEncodeService;
 use ApiClients\Tools\TestUtilities\TestCase;
 use ExceptionalJSON\EncodeErrorException;
 use React\EventLoop\Factory;

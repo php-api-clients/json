@@ -1,14 +1,15 @@
 <?php declare(strict_types=1);
 
-namespace ApiClients\Tools\JSON\Service;
+namespace ApiClients\Tools\JSON;
 
 use ApiClients\Foundation\Service\ServiceInterface;
 use React\EventLoop\LoopInterface;
 use React\Promise\CancellablePromiseInterface;
-use function ExceptionalJSON\decode;
+use function ExceptionalJSON\encode;
+use function React\Promise\resolve;
 use function WyriHaximus\React\futureFunctionPromise;
 
-final class JsonDecodeService
+final class JsonEncodeService
 {
     /**
      * @var LoopInterface
@@ -23,10 +24,18 @@ final class JsonDecodeService
         $this->loop = $loop;
     }
 
-    public function handle(string $input = ''): CancellablePromiseInterface
+    /**
+     * @param array $input
+     * @return CancellablePromiseInterface
+     */
+    public function handle(array $input = []): CancellablePromiseInterface
     {
+        if (!is_array($input)) {
+            return resolve($input);
+        }
+
         return futureFunctionPromise($this->loop, $input, function ($json) {
-            return decode($json, true);
+            return encode($json);
         });
     }
 }
