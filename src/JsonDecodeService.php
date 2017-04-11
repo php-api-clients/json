@@ -23,7 +23,7 @@ final class JsonDecodeService
         $this->loop = $loop;
     }
 
-    public function handle(string $input = ''): CancellablePromiseInterface
+    public function decode(string $input): CancellablePromiseInterface
     {
         return futureFunctionPromise($this->loop, $input, function ($json) {
             return decode($json, true);

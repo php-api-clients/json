@@ -14,7 +14,7 @@ class JsonEncodeServiceTest extends TestCase
     {
         $loop = Factory::create();
         $handler = new JsonEncodeService($loop);
-        self::assertSame('[]', await($handler->handle([]), $loop));
+        self::assertSame('[]', await($handler->encode([]), $loop));
     }
 
     public function testFailure()
@@ -24,6 +24,6 @@ class JsonEncodeServiceTest extends TestCase
 
         $loop = Factory::create();
         $handler = new JsonEncodeService($loop);
-        await($handler->handle(["\xB1\x31"]), $loop);
+        await($handler->encode(["\xB1\x31"]), $loop);
     }
 }

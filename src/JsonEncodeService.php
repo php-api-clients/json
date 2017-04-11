@@ -28,7 +28,7 @@ final class JsonEncodeService
      * @param array $input
      * @return CancellablePromiseInterface
      */
-    public function handle(array $input = []): CancellablePromiseInterface
+    public function encode(array $input): CancellablePromiseInterface
     {
         if (!is_array($input)) {
             return resolve($input);
