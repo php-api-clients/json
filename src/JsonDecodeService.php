@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace ApiClients\Tools\JSON;
+namespace ApiClients\Tools\Json;
 
 use ApiClients\Foundation\Service\ServiceInterface;
 use React\EventLoop\LoopInterface;
