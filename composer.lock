@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "9d4fef2015f9bffe13946783c86b5d22",
+    "content-hash": "76355da2ce5415c0bc17337f36b280af",
     "packages": [
         {
             "name": "daverandom/exceptional-json",
@@ -1855,5 +1855,8 @@
     "platform": {
         "php": "^7.0"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "platform-overrides": {
+        "php": "7.0"
+    }
 }
