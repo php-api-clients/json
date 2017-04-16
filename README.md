@@ -7,6 +7,14 @@
 [![License](https://poser.pugx.org/api-clients/json/license.png)](https://packagist.org/packages/api-clients/json)
 [![PHP 7 ready](http://php7ready.timesplinter.ch/php-api-clients/json/badge.svg)](https://appveyor-ci.org/php-api-clients/json)
 
+# Installation
+
+To install via [Composer](http://getcomposer.org/), use the command below, it will automatically detect the latest version and bind it with `^`.
+
+```
+composer require api-clients/json 
+```
+
 # License
 
 The MIT License (MIT)
