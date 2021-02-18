@@ -10,7 +10,7 @@
   "require": {
     "php": "^7.0",
     "daverandom/exceptional-json": "^1.0.1",
-    "wyrihaximus/ticking-promise": "^1.6"
+    "wyrihaximus/ticking-promise": "^2 || ^1.6"
   },
   "require-dev": {
     "api-clients/test-utilities": "^3.0.1 || ^4.0.0"

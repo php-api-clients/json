@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7a365113d040378e9bdb9265e72bc9d8",
+    "content-hash": "692546d7eb188b1ab665799b440ad9a3",
     "packages": [
         {
             "name": "daverandom/exceptional-json",
@@ -177,6 +177,10 @@
                 }
             ],
             "description": "Wrapping ticks into a promise",
+            "support": {
+                "issues": "https://github.com/WyriHaximus/TickingPromise/issues",
+                "source": "https://github.com/WyriHaximus/TickingPromise/tree/master"
+            },
             "time": "2018-04-05T12:36:50+00:00"
         }
     ],
@@ -4026,5 +4030,6 @@
     "platform-dev": [],
     "platform-overrides": {
         "php": "7.0"
-    }
+    },
+    "plugin-api-version": "2.0.0"
 }
